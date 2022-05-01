@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon"
+        href="https://scontent-dus1-1.xx.fbcdn.net/v/t1.6435-9/60814662_2416049561758879_6734010783094538240_n.png?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=JaEMbCJxWp0AX9Dd-JD&_nc_ht=scontent-dus1-1.xx&oh=00_AT8KgnOpdi5t-JzIdAaKUoYj29uS-1MAx9JNSfz03EQggw&oe=628FF89C" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <title>FAPI App</title>
+</head>
+
+<body>
+    <!--Contact FORM-->
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-50">
+                            <h1>Kontaktné údaje</h1>
+                            <label for="fname"><i class="fa fa-user"></i> Meno</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Peter">
+                            <label for="fname"><i class="fa fa-user"></i> Priezvisko</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Novák">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="peter.novak@priklad.sk">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Adresa</label>
+                            <input type="text" id="adr" name="address" placeholder="Hlavná">
+                            <label for="city"><i class="fa fa-institution"></i> Mesto</label>
+                            <input type="text" id="city" name="city" placeholder="Prešov">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="Slovensko">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">PSČ</label>
+                                    <input type="text" id="zip" name="zip" placeholder="51468">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Fakturačná adresa je rovnaká ako
+                        doručovacia
+                    </label>
+                    <input type="submit" value="Potvrdiť" class="btn">
+                </form>
+                <!-- Shopping CART -->
+
+                <div class="">
+                    <div class="shopping-cart-wrapper">
+                        <table class="table is-fullwidth shopping-cart">
+                            <thead>
+                                <tr>
+                                    <th><abbr title="Position"></abbr></th>
+                                    <th>Produkt</th>
+                                    <th>Cena</th>
+                                    <th>Množstvo</th>
+                                    <th>Spolu</th>
+                                    <th>Odobrať</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <hr>
+                        <div class="totals row">
+                            <div class="totals-item">
+                                <label>Cena</label>
+                                <div class="totals-value" id="cart-subtotal">€0</div>
+                            </div>
+                            <div class="totals-item">
+                                <label>DPH (19%)</label>
+                                <div class="totals-value" id="cart-tax">€0</div>
+                            </div>
+                            <div class="totals-item">
+                                <label>Poštovné</label>
+                                <div class="totals-value" id="cart-shipping">€0</div>
+                            </div>
+                            <div class="totals-item totals-item-total">
+                                <label>Cena spolu</label>
+                                <div class="totals-value" id="cart-total">€0</div>
+                            </div>
+                            <button class="btn">Objednať</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
